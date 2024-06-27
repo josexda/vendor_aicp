@@ -9,7 +9,7 @@ PRODUCT_PACKAGES += \
     hosts.aicp_adblock
 
 # AICP OTA
-ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
+ifeq ($(AICP_BUILDTYPE),UNOFFICIAL)
 PRODUCT_PACKAGES +=  \
    Updater
 
